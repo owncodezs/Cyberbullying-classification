@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 90vh;
+    gap: 20px;
+}
+
+.container div{
+    min-width: 40%;
+}
+
+.image-container{
+
+    height: 98%;
+    display: flex;
+
+}
+
+.like{
+    cursor: pointer;
+}
+
+.color{
+    color: #f80759;
+}
+
+.like-comment{
+    height: 5%;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+.image-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.comments {
+    margin-top: 20px;
+    width: 100% !important;
+    height: 70%; 
+    overflow-y: scroll;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90% !important;
+}
+
+.comment-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100% !important;
+}
+
+#comment-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    /* background-color: #007BFF; */
+    background: linear-gradient(135deg, #bc4e9c, #f80759);
+    color: white;
+    border: none;
+    border-radius: 20%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #114e90;
+}
+
+
+.float{
+    float:right;
+}
+
+
+
+.custom-dropdown {
+    width: 200px; 
+    padding: 10px; 
+    border: 1px solid #f80759; 
+    border-radius: 4px;
+    background-color: #fff; 
+    color: #333; 
+    font-size: 16px; 
+  }
+  
+
+  .custom-dropdown option {
+    background-color: #fff;
+    color: #333; 
+    font-size: 16px;
+  }
+  
+
+  .custom-dropdown:focus {
+    border: 2px solid #f80759;
+    outline: none;
+  }
+  
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border: 1px solid #f80759;
+    border-radius: 20px;
+    width: 90% !important;
+  }
+  
+  .input-box {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .submit-button {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .comments {
+    padding: 10px;
+  }
+  
+  .comment {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .comment span {
+    margin-right: 10px;
+    word-break: break-word;
+    flex: 1;
+  }
+  
+  .float {
+    color: #888888;
+    font-size: 12px;
+  }
+  
+  .comment.highlight {
+    background-color: #f0f0f0;
+  }
+  
+.your-logo {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 32px; 
+    color: #000; 
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .image-container{
+    position: relative;
+  }
+  .like-img{
+    display: none;
+    transition: transform 2s;
+    transform: scale(1);
+  
+  }
+  /* .like-img.clicked{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 150px;
+
+  }
+
+  .like-heart{
+    width: 100%;
+    object-fit: contain;
+    
+  }
+
+  .like-heart.clicked{
+    transition: transform 2s;
+    transform: scale(1.2) ;
+  } */
+
+
+  .like-img {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    width: 150px;
+    transition: transform 1s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .like-img.clicked {
+    display: block;
+  }
+  .like-heart.styled {
+    transform : scale(1.2) !important;
+  }
